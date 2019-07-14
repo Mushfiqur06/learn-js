@@ -13,6 +13,7 @@ myImage.onclick = function(){
 */
 
 //Adding a personalize welcome message
+/*
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
@@ -32,3 +33,32 @@ if(!localStorage.getItem('name')){
 myButton.onclick = function(){
 	setUserName();
 }
+*/
+
+
+//If Statement
+function testNum(a){
+	if(a > 0){
+		return('Positive');
+	}else{
+		return('Not Positive');
+	}
+}
+console.log(testNum(5));
+
+//Condition (ternary) Operator
+function getFee(isMonth){
+	return (isMonth ? '$2.00' : '$10.00');
+}
+
+var age = 26;
+var beverage = (age >= 21) ? 'Beer' : 'Juice';
+console.log(beverage);
+
+function greeting(person){
+	var name = person ? person.name : 'stranger';
+	return 'hello ' + name;
+}
+
+console.log(greeting(undefined));
+
