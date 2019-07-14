@@ -6,8 +6,27 @@
 	<title>Learn JavaScript</title>
 </head>
 <body>
+
+	<!--
 	<h1></h1>
-	<button type="button">Chnage user</button>
+	<button type="button">Change user</button>
+	-->
+
+	<form action="" name="selectForm">
+		<p>
+			<label for="musicType">choose some music types, then click the button below</label>
+			<select name="musicType" id="musicType" multiple="multiple">
+				<option selected="selected">R&B</option>
+				<option>Jazz</option>
+				<option>Blues</option>
+				<option>New Age</option>
+			</select>
+		</p>
+		<p>
+			<input type="button" id="btn" value="How many are selected">
+		</p>
+	</form>
+
 	
 	<script src="main.js"></script>
 </body>

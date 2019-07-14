@@ -37,6 +37,7 @@ myButton.onclick = function(){
 
 
 //If Statement
+/*
 function testNum(a){
 	if(a > 0){
 		return('Positive');
@@ -61,4 +62,71 @@ function greeting(person){
 }
 
 console.log(greeting(undefined));
+*/
 
+//loop example
+/*
+function howMany(selectObject){
+	var numberSelected = 0;
+	for(var i = 0; i < selectObject.options.length; i++){
+		if(selectObject.options[i].selected){
+			numberSelected++;
+		}
+	}
+	return numberSelected;
+}
+
+var bt = document.getElementById('btn');
+btn.addEventListener('click', function(){
+	alert('Number of option selected: ' + howMany(document.selectForm.musicType))
+})
+*/
+
+/*
+var i = 0;
+do{
+	i += 1;
+	console.log(i);
+}while(i < 5);
+*/
+
+/*
+var n = 0;
+var x = 0;
+while(n < 3){
+	n++;
+	x += n;
+	console.log(n);
+}
+*/
+
+/*
+var x = 0;
+var z = 0;
+labelCancelLoops: while(true){
+	console.log('Outer Loops: ' + x);
+	x += 1;
+	z = 1;
+	while(true){
+		console.log('inner loops: ' + x);
+		z += 1;
+		if(z === 10 && x === 10){
+			break labelCancelLoops;
+		}else if(z === 10){
+			break;
+		}
+	}
+}
+*/
+
+/*
+var x;
+var myCars = new Object();
+myCars[10] = "Saab";
+myCars[20] = "Volvo";
+myCars[30] = "BMW";
+
+for (x in myCars) {
+	console.log(myCars[x]);
+}
+*/
