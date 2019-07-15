@@ -150,6 +150,7 @@ if(Array.prototype.every.call(str, isLetter)){
 */
 
 //Learn Object
+/*
 var obj = {
 	name: 'Mushfiqur Rahman Niloy',
 	email: 'mushfiqur06@gmail.com',
@@ -178,3 +179,34 @@ var person = {
 	}
 }
 console.log(person.greeting())
+*/
+
+function muFun(theObject){
+	theObject.make = 'Toyota'
+}
+
+var myCar = {
+	make: 'Honda',
+	model: 'Accord',
+	year: '1994'
+}
+var x = myCar.make;
+muFun(myCar);
+y = myCar.make;
+console.log(y);
+
+
+
+var square = function (n){
+	return n * n;
+}
+console.log(square(5));
+
+
+var num1 = 30;
+var num2 = 20;
+var name = 'Chakma';
+
+function multiply(){
+	return num1 * num2;
+}
