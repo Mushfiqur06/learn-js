@@ -130,3 +130,51 @@ for (x in myCars) {
 	console.log(myCars[x]);
 }
 */
+
+//Array
+/*
+var fruits = ['Apple', 'banana'];
+fruits.push('Orange');
+fruits.forEach(function(item){
+	console.log(item);
+})
+*/
+
+/*
+function isLetter(character){
+	return character >= 'a' && character <= 'z';
+}
+if(Array.prototype.every.call(str, isLetter)){
+	console.log("This string " +  str + " contains only letter");
+}
+*/
+
+//Learn Object
+var obj = {
+	name: 'Mushfiqur Rahman Niloy',
+	email: 'mushfiqur06@gmail.com',
+	skills: ['JavaScript', 'Python', 'C'],
+	address: {
+		city: 'Dhaka',
+		area: 'Mirpur',
+		country: 'BD'
+	}
+};
+
+obj.skills.forEach(element => {
+	console.log(obj.name + ' knows ' + element);
+});
+
+var person = {
+	name: ['Bob', 'Smith'],
+	age: 32,
+	gender: 'male',
+	interests: ['music', 'skiing'],
+	bio: function(){
+		console.log(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.')
+	},
+	greeting: function(){
+		console.log('Hi! I\'m ' + this.name[0] + '.')
+	}
+}
+console.log(person.greeting())
