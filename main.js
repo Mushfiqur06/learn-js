@@ -180,7 +180,7 @@ var person = {
 }
 console.log(person.greeting())
 */
-
+/*
 function muFun(theObject){
 	theObject.make = 'Toyota'
 }
@@ -210,3 +210,43 @@ var name = 'Chakma';
 function multiply(){
 	return num1 * num2;
 }
+*/
+
+//First Class Function
+/*
+function sayHello(){
+	return 'Hello, ';
+}
+
+function greeting(helloMessage, name){
+	console.log(helloMessage() + name);
+}
+greeting(sayHello, 'Niloy');
+*/
+
+//Learn IndexOf()
+var beats = ['ant', 'bison', 'camel', 'duck', 'bison'];
+console.log(beats.indexOf('duck'));
+
+var indices = [];
+var array = ['a', 'b', 'a', 'c', 'a', 'd'];
+var element = 'a';
+var idx = array.indexOf(element);
+
+while(idx != -1){
+	indices.push(idx);
+	idx = array.indexOf(element, idx + 1);
+}
+
+function updateVegetablesCollection(veggies, veggie){
+	if(veggies.indexOf(veggie) === -1){
+		veggies.push(veggie);
+		console.log('New veggie collection is: ' + veggies);
+	}else if(veggies.indexOf(veggie) > -1 ){
+		console.log(veggie + ' already exists in the veggies collection');
+	}
+}
+var veggies = ['potato', 'tomato', 'chillies', 'green-pepper'];
+
+var collection = updateVegetablesCollection(veggies, 'spinach');
+console.log(collection)
