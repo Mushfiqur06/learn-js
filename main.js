@@ -225,6 +225,7 @@ greeting(sayHello, 'Niloy');
 */
 
 //Learn IndexOf()
+/*
 var beats = ['ant', 'bison', 'camel', 'duck', 'bison'];
 console.log(beats.indexOf('duck'));
 
@@ -250,3 +251,41 @@ var veggies = ['potato', 'tomato', 'chillies', 'green-pepper'];
 
 var collection = updateVegetablesCollection(veggies, 'spinach');
 console.log(collection)
+*/
+
+//Learn Inheritance
+/*
+function Person(first, last, age, gender, interests){
+	this.name = {
+		first,
+		last
+	};
+	this.age = age;
+	this.gender = gender;
+	this.interests = interests;
+}
+
+Person.prototype.greetings = function(){
+	console.log('Hi! I\'m ' + this.name.first + '.');
+}
+*/
+
+function Book(name, author, price){
+	this.name = name;
+	this.author = author;
+	this.price = price;
+
+	this.wishList = function(){
+		console.log('This is wish List method and author name is ' + this.author);
+	}
+}
+
+Book.prototype.buy = function(){
+	console.log('This is buy method and book name is ' + this.name);
+};
+
+let book1 = new Book('Book1', 'Author1', 84);
+let book2 = new Book('Book2', 'Author2', 87);
+
+console.log(book1.buy());
+console.log(book2.wishList());
