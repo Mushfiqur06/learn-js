@@ -270,6 +270,7 @@ Person.prototype.greetings = function(){
 }
 */
 
+/*
 function Book(name, author, price){
 	this.name = name;
 	this.author = author;
@@ -289,3 +290,33 @@ let book2 = new Book('Book2', 'Author2', 87);
 
 console.log(book1.buy());
 console.log(book2.wishList());
+*/
+
+let obj = {
+	a: 10,
+	b: 20,
+
+	print: function(){
+		console.log(this.a);
+
+		function myFunc(){
+			console.log(this.b);
+		}
+	}
+}
+obj.print();
+
+let obj1 = {
+	name: 'Mushfiqur',
+
+	print: function(){
+		console.log(this.name)
+	}
+}
+
+let obj2 = {
+	name: 'Niloy',
+	print: obj1.print
+}
+
+obj2.print();
