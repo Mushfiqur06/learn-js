@@ -292,31 +292,98 @@ console.log(book1.buy());
 console.log(book2.wishList());
 */
 
-let obj = {
-	a: 10,
-	b: 20,
+// let obj = {
+// 	a: 10,
+// 	b: 20,
 
-	print: function(){
-		console.log(this.a);
+// 	print: function(){
+// 		console.log(this.a);
 
-		function myFunc(){
-			console.log(this.b);
-		}
+// 		function myFunc(){
+// 			console.log(this.b);
+// 		}
+// 	}
+// }
+// obj.print();
+
+// let obj1 = {
+// 	name: 'Mushfiqur',
+
+// 	print: function(){
+// 		console.log(this.name)
+// 	}
+// }
+
+// let obj2 = {
+// 	name: 'Niloy',
+// 	print: obj1.print
+// }
+
+// obj2.print();
+
+//Impurly Changing an Object
+// const impureAssoc = (key, value, object) => {
+// 	object[key] = value;
+// }
+// const person = {
+// 	name: 'Bobo'
+// }
+// const result = impureAssoc('Niloy', 400, person);
+
+// console.log({person, result})
+
+//Purifying it up
+// const pureAssoc = (key, value, object) => ({
+// 	...object,
+// 	[key]: value
+// });
+
+// const person = {
+// 	name: 'Babo'
+// }
+
+// const result = pureAssoc('Niloy2', 400, pureAssoc);
+
+// console.log({person, result})
+
+//Another pure way
+// const pureAssoc = (key, value, object) => {
+// 	const newObeject = {...object};
+
+// 	newObeject[key] = value;
+
+// 	return newObeject;
+// }
+
+// const person = {
+// 	name: 'Babo2'
+// };
+// const result = pureAssoc('Niloy3', 5000, person);
+
+// console.log({person, result})
+
+// Unsafe Nested Mutation
+// const person = {
+// 	name: 'Niloy4',
+// 	address: {
+// 		street: 'Main Street',
+// 		number: 123
+// 	}
+// }
+
+// const shallowPersonClone = {...person};
+// shallowPersonClone.address.number = 456;
+// console.log( {person, shallowPersonClone})
+
+//Safe Nested Mutation
+const person = {
+	name: 'Bobo5',
+	address: {
+		street: 'Main Street',
+		number: 123
 	}
 }
-obj.print();
 
-let obj1 = {
-	name: 'Mushfiqur',
-
-	print: function(){
-		console.log(this.name)
-	}
-}
-
-let obj2 = {
-	name: 'Niloy',
-	print: obj1.print
-}
-
-obj2.print();
+const deepPersonClone = JSON.parse(JSON.stringify(person));
+deepPersonClone.address.number = 456;
+console.log({person, deepPersonClone})
