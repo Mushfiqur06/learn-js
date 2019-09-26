@@ -376,14 +376,26 @@ console.log(book2.wishList());
 // console.log( {person, shallowPersonClone})
 
 //Safe Nested Mutation
-const person = {
-	name: 'Bobo5',
-	address: {
-		street: 'Main Street',
-		number: 123
-	}
-}
+// const person = {
+// 	name: 'Bobo5',
+// 	address: {
+// 		street: 'Main Street',
+// 		number: 123
+// 	}
+// }
 
-const deepPersonClone = JSON.parse(JSON.stringify(person));
-deepPersonClone.address.number = 456;
-console.log({person, deepPersonClone})
+// const deepPersonClone = JSON.parse(JSON.stringify(person));
+// deepPersonClone.address.number = 456;
+// console.log({person, deepPersonClone})
+
+//Return from another function
+// function greeting(msg){
+// 	return function(name){
+// 		console.log(msg + ' ' + name);
+// 	}
+// }
+// const goodMorning = greeting('Good Morning');
+// goodMorning('Niloy');
+// goodMorning('Meher');
+// const goodNight = greeting('Good Night');
+// goodNight('Mushfiq')
