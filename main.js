@@ -401,15 +401,15 @@ console.log(book2.wishList());
 // goodNight('Mushfiq')
 
 //Make a power function
-function power(base){
-	return function(num){
-		let result = 1;
-		for(let i = 0; i < base; i++){
-			result *= num;
-		}
-		return result;
-	}
-}
+// function power(base){
+// 	return function(num){
+// 		let result = 1;
+// 		for(let i = 0; i < base; i++){
+// 			result *= num;
+// 		}
+// 		return result;
+// 	}
+// }
 
-const good = power(4)(6);
-console.log(good)
+// const good = power(4)(6);
+// console.log(good)
