@@ -416,16 +416,16 @@ console.log(book2.wishList());
 
 // Learn Higher Order Function
 
-function callMe(name, cb){
-	console.log(`Hello ${name}`);
-	console.log(`You name has ${name.length} character`);
-	cb(name)
-}
+// function callMe(name, cb){
+// 	console.log(`Hello ${name}`);
+// 	console.log(`You name has ${name.length} character`);
+// 	cb(name)
+// }
 
-function doSomeThing(name){
-	let newName = name.split('').join(' - ');
-	console.log('Nice presentation of your name' );
-	console.log(newName);
-}
+// function doSomeThing(name){
+// 	let newName = name.split('').join(' - ');
+// 	console.log('Nice presentation of your name' );
+// 	console.log(newName);
+// }
 
-callMe('Mushfiqur Rahman Niloy', doSomeThing)
+// callMe('Mushfiqur Rahman Niloy', doSomeThing)
