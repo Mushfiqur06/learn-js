@@ -413,3 +413,22 @@ console.log(book2.wishList());
 
 // const good = power(4)(6);
 // console.log(good)
+
+// const good = power(4)(6);
+// console.log(good)
+
+// Learn Higher Order Function
+
+// function callMe(name, cb){
+// 	console.log(`Hello ${name}`);
+// 	console.log(`You name has ${name.length} character`);
+// 	cb(name)
+// }
+
+// function doSomeThing(name){
+// 	let newName = name.split('').join(' - ');
+// 	console.log('Nice presentation of your name' );
+// 	console.log(newName);
+// }
+
+// callMe('Mushfiqur Rahman Niloy', doSomeThing)
