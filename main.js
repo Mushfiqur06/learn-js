@@ -432,4 +432,6 @@ console.log(book2.wishList());
 // }
 
 callMe('Mushfiqur Rahman Niloy', doSomeThing)
-callMe('Mushfiqur Niloy', doSomeThing)
+callMe('Mushfiqur Niloy', doSomeThing);
+
+console.log('hello from Niloy')
