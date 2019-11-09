@@ -434,8 +434,7 @@ console.log(book2.wishList());
 callMe('Mushfiqur Rahman Niloy', doSomeThing)
 callMe('Mushfiqur Niloy', doSomeThing);
 
-console.log('hello from Niloy')
-console.log('hello from Niloy')
-console.log('hello from Niloy')
-console.log('hello from Niloy')
-console.log('hello from Niloy')
+callMe('Mushfiqur Niloy', doSomeThing);
+
+
+
