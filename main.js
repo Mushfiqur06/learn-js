@@ -457,17 +457,13 @@ console.log(book2.wishList());
 // niloy.name;
 // niloy.greeting();
 
-function copyMatchin(arr, num){
-	const newArray = [];
+function spreadOut(){
+	const newArray = ['to', 'code'];
+	const anotherArray = ['learning', ...newArray, 'is', 'func'];
 
-	while(1 <= num){
-		newArray.push([...arr]);
-
-		num--;
-	}
-	return newArray;
+	return anotherArray;
 }
-console.log(copyMatchin([1, 2, 3], 5))
+console.log(spreadOut())
 
 // function Person(name){
 // 	this.name = name;
