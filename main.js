@@ -457,9 +457,13 @@ console.log(book2.wishList());
 // niloy.name;
 // niloy.greeting();
 
-function Person(name){
-	this.name = name;
-	this.greeting = function(){
-		console.log('Hi! I\'m ' + obj.name + '.')
-	}
-}
+const arrayOne = ['rain', 'snow', 'sleet', 'hail', 'clear']
+const newArray = arrayOne.slice(2, 4);
+console.log(newArray);
+
+// function Person(name){
+// 	this.name = name;
+// 	this.greeting = function(){
+// 		console.log('Hi! I\'m ' + obj.name + '.')
+// 	}
+// }
