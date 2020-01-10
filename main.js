@@ -457,13 +457,16 @@ console.log(book2.wishList());
 // niloy.name;
 // niloy.greeting();
 
-function spreadOut(){
-	const newArray = ['to', 'code'];
-	const anotherArray = ['learning', ...newArray, 'is', 'func'];
-
-	return anotherArray;
+function check(arr, num){
+	if(arr.indexOf(num) === -1){
+		return false
+	}else{
+		return true
+	}
 }
-console.log(spreadOut())
+
+const newArray = ['Niloy', 'Tuni', 'Meher'];
+console.log(check(newArray, 'Meher'))
 
 // function Person(name){
 // 	this.name = name;
