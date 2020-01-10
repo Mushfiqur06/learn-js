@@ -457,9 +457,17 @@ console.log(book2.wishList());
 // niloy.name;
 // niloy.greeting();
 
-const arrayOne = ['rain', 'snow', 'sleet', 'hail', 'clear']
-const newArray = arrayOne.slice(2, 4);
-console.log(newArray);
+function copyMatchin(arr, num){
+	const newArray = [];
+
+	while(1 <= num){
+		newArray.push([...arr]);
+
+		num--;
+	}
+	return newArray;
+}
+console.log(copyMatchin([1, 2, 3], 5))
 
 // function Person(name){
 // 	this.name = name;
