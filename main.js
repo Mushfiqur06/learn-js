@@ -431,11 +431,35 @@ console.log(book2.wishList());
 // 	console.log(newName);
 // }
 
-callMe('Mushfiqur Rahman Niloy', doSomeThing)
-callMe('Mushfiqur Niloy', doSomeThing);
+// callMe('Mushfiqur Rahman Niloy', doSomeThing)
+// callMe('Mushfiqur Niloy', doSomeThing);
 
-callMe('Mushfiqur Niloy', doSomeThing);
-callMe('Mushfiqur Niloy', doSomeThing);
-callMe('Mushfiqur Niloy', doSomeThing);
+// callMe('Mushfiqur Niloy', doSomeThing);
+// callMe('Mushfiqur Niloy', doSomeThing);
+// callMe('Mushfiqur Niloy', doSomeThing);
 
 
+// function createNewPerson(name){
+// 	const obj = {};
+// 	obj.name = name;
+// 	obj.greeting = function(){
+// 		console.log('Hi! I\'m ' + obj.name + '.')
+// 	}
+
+// 	return obj;
+// }
+
+// const salva = createNewPerson('Mushfiqur Rahman Niloy');
+// salva.name;
+// salva.greeting();
+
+// const niloy = createNewPerson('Mushfiqur Niloy');
+// niloy.name;
+// niloy.greeting();
+
+function Person(name){
+	this.name = name;
+	this.greeting = function(){
+		console.log('Hi! I\'m ' + obj.name + '.')
+	}
+}
