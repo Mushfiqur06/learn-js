@@ -468,22 +468,35 @@ console.log(book2.wishList());
 // const newArray = ['Niloy', 'Tuni', 'Meher'];
 // console.log(check(newArray, 'Meher'))
 
-function Person(first, last, age, gender, interests){
-	this.name = {
-		first: first,
-		last: last
-	}
-	this.age = age
-	this.gender = gender
-	this.interests = interests
+// function Person(first, last, age, gender, interests){
+// 	this.name = {
+// 		first: first,
+// 		last: last
+// 	}
+// 	this.age = age
+// 	this.gender = gender
+// 	this.interests = interests
 
-	this.bio = function(){
-		console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old.')
+// 	this.bio = function(){
+// 		console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old.')
+// 	}
+// 	this.greeting = function(){
+// 		console.log('Hello i\'m ' + this.name.first)
+// 	}
+// }
+
+// const niloy = new Person('Mushfiqur', 'Niloy', 23, 'Male', 'Games')
+// console.log(niloy.greeting())
+
+function filteredArray(arr, elm){
+	const newArray = []
+	for(let i = 0; i < arr.length; i++){
+		if(arr[i].indexOf(elm) === -1){
+			newArray.push(arr[i])
+		}
 	}
-	this.greeting = function(){
-		console.log('Hello i\'m ' + this.name.first)
-	}
+
+	return newArray;
 }
 
-const niloy = new Person('Mushfiqur', 'Niloy', 23, 'Male', 'Games')
-console.log(niloy.greeting())
+console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18))
