@@ -457,20 +457,33 @@ console.log(book2.wishList());
 // niloy.name;
 // niloy.greeting();
 
-function check(arr, num){
-	if(arr.indexOf(num) === -1){
-		return false
-	}else{
-		return true
+// function check(arr, num){
+// 	if(arr.indexOf(num) === -1){
+// 		return false
+// 	}else{
+// 		return true
+// 	}
+// }
+
+// const newArray = ['Niloy', 'Tuni', 'Meher'];
+// console.log(check(newArray, 'Meher'))
+
+function Person(first, last, age, gender, interests){
+	this.name = {
+		first: first,
+		last: last
+	}
+	this.age = age
+	this.gender = gender
+	this.interests = interests
+
+	this.bio = function(){
+		console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old.')
+	}
+	this.greeting = function(){
+		console.log('Hello i\'m ' + this.name.first)
 	}
 }
 
-const newArray = ['Niloy', 'Tuni', 'Meher'];
-console.log(check(newArray, 'Meher'))
-
-// function Person(name){
-// 	this.name = name;
-// 	this.greeting = function(){
-// 		console.log('Hi! I\'m ' + obj.name + '.')
-// 	}
-// }
+const niloy = new Person('Mushfiqur', 'Niloy', 23, 'Male', 'Games')
+console.log(niloy.greeting())
