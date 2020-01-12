@@ -509,4 +509,4 @@ console.log(book2.wishList());
 
 // hoist()
 
-console.log(typeof variable)
+console.log('jvnfjnj rhrehrh')
