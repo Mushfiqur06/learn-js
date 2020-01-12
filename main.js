@@ -501,12 +501,10 @@ console.log(book2.wishList());
 
 // console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18))
 
-// function hoist(){
-// 	console.log(message)
-// 	var message = 'Hello'
-// 	console.log(message)
-// }
+function hoist(){
+	console.log(message)
+	var message = 'Hello'
+	console.log(message)
+}
 
-// hoist()
-
-console.log('jvnfjnj rhrehrhj befjk bbfhfvuvhufvhbu bf j fj fuu hfu hfuvfu')
+hoist()
