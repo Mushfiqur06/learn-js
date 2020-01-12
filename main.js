@@ -488,15 +488,25 @@ console.log(book2.wishList());
 // const niloy = new Person('Mushfiqur', 'Niloy', 23, 'Male', 'Games')
 // console.log(niloy.greeting())
 
-function filteredArray(arr, elm){
-	const newArray = []
-	for(let i = 0; i < arr.length; i++){
-		if(arr[i].indexOf(elm) === -1){
-			newArray.push(arr[i])
-		}
-	}
+// function filteredArray(arr, elm){
+// 	const newArray = []
+// 	for(let i = 0; i < arr.length; i++){
+// 		if(arr[i].indexOf(elm) === -1){
+// 			newArray.push(arr[i])
+// 		}
+// 	}
 
-	return newArray;
-}
+// 	return newArray;
+// }
 
-console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18))
+// console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18))
+
+// function hoist(){
+// 	console.log(message)
+// 	var message = 'Hello'
+// 	console.log(message)
+// }
+
+// hoist()
+
+console.log(typeof variable)
