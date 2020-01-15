@@ -501,10 +501,24 @@ console.log(book2.wishList());
 
 // console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18))
 
-function hoist(){
-	console.log(message)
-	var message = 'Hello'
-	console.log(message)
+// function hoist(){
+// 	console.log(message)
+// 	var message = 'Hello'
+// 	console.log(message)
+// }
+
+// hoist()
+
+var myCustomObj = {
+	name: 'Mushfiqur Rahman Niloy',
+	age: 25,
+	anotherObj: {
+		name: 'Mushfiqur Niloy',
+		value: function(){
+			console.log('hello ' + this.name)
+		}
+	}
 }
 
-hoist()
+myCustomObj.anotherObj.value()
+myCustomObj.anotherObj.value.call(myCustomObj)
