@@ -509,16 +509,15 @@ console.log(book2.wishList());
 
 // hoist()
 
-var myCustomObj = {
-	name: 'Mushfiqur Rahman Niloy',
-	age: 25,
-	anotherObj: {
-		name: 'Mushfiqur Niloy',
-		value: function(){
-			console.log('hello ' + this.name)
-		}
-	}
+function Person(name, age){
+	this.name = name;
+	this.age = age;
 }
 
-myCustomObj.anotherObj.value()
-myCustomObj.anotherObj.value.call(myCustomObj)
+Person.prototype.print = function(){
+	const details = `Hello, My name is ${this.name} and i'm a ${this.age} year's old.`
+	return details;
+}
+
+const result = new Person('Mushfiqur Niloy', 23);
+console.log(result.print())
