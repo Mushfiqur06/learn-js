@@ -540,18 +540,9 @@ console.log(book2.wishList());
 
 // console.log(arrays.shift())
 
-function findElement(arr, func){
-	var num;
-  
-  for(var i = 0; i <arr.length; i++) {
-    
-    if(func(arr[i]) === true) {
-      num = arr[i];
-      
-      return num;
-      
-    }
+function booWho(bool) {
+	// What is the new fad diet for ghost developers? The Boolean.
+	return typeof bool === "boolean" ? true : false;
   }
-
-}
-console.log(findElement([1, 2, 4, 5], num => num % 2 === 0))
+  
+  booWho(null);
