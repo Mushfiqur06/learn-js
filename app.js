@@ -1,11 +1,11 @@
 //Build-in browser function
-let myText = 'I am a String';
-let newString = myText.replace('String', 'I am another String');
-//console.log(newString);
+// let myText = 'I am a String';
+// let newString = myText.replace('String', 'I am another String');
+// //console.log(newString);
 
-let myArray = ['I', 'love', 'JavaScript'];
-let madeString = myArray.join(' ');
-console.log(madeString);
+// let myArray = ['I', 'love', 'JavaScript'];
+// let madeString = myArray.join(' ');
+// console.log(madeString);
 
 //learn array sorting
 // let arr = [12, 45, 67, 90, 1, 46, 678];
@@ -37,29 +37,29 @@ console.log(madeString);
 
 // console.log(arr)
 
-let homes = [
-    {
-        "h_id": "3",
-        "city": "Dallas",
-        "state": "TX",
-        "zip": "95201",
-        "price": "162500"
-    }, {
-        "h_id": "4",
-        "city": "Bevery Hills",
-        "state": "CA",
-        "zip": "75201",
-        "price": "200"
-    }, {
-        "h_id": "5",
-        "city": "New York",
-        "state": "NY",
-        "zip": "00010",
-        "price": "962500"
-    }
-];
+// let homes = [
+//     {
+//         "h_id": "3",
+//         "city": "Dallas",
+//         "state": "TX",
+//         "zip": "95201",
+//         "price": "162500"
+//     }, {
+//         "h_id": "4",
+//         "city": "Bevery Hills",
+//         "state": "CA",
+//         "zip": "75201",
+//         "price": "200"
+//     }, {
+//         "h_id": "5",
+//         "city": "New York",
+//         "state": "NY",
+//         "zip": "00010",
+//         "price": "962500"
+//     }
+// ];
 
-homes.sort((a, b) => {
-    return parseFloat(a.price) - parseFloat(b.price);
-})
-console.log(homes)
+// homes.sort((a, b) => {
+//     return parseFloat(a.price) - parseFloat(b.price);
+// })
+// console.log(homes)

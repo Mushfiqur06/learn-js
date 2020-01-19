@@ -509,15 +509,15 @@ console.log(book2.wishList());
 
 // hoist()
 
-function Person(name, age){
-	this.name = name;
-	this.age = age;
-}
+// function Person(name, age){
+// 	this.name = name;
+// 	this.age = age;
+// }
 
-Person.prototype.print = function(){
-	const details = `Hello, My name is ${this.name} and i'm a ${this.age} year's old.`
-	return details;
-}
+// Person.prototype.print = function(){
+// 	const details = `Hello, My name is ${this.name} and i'm a ${this.age} year's old.`
+// 	return details;
+// }
 
-const result = new Person('Mushfiqur Niloy', 23);
-console.log(result.print())
+// const result = new Person('Mushfiqur Niloy', 23);
+// console.log(result.print())
