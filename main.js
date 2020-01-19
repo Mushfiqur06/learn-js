@@ -540,9 +540,12 @@ console.log(book2.wishList());
 
 // console.log(arrays.shift())
 
-function repeatStringNumTimes(str, num) {
-	return num > 0 ? str.repeat(num) : ''
+function truncateString(str, num) {
+	if(str.length <= num){
+		return str
+	}else{
+		return str.slice(0, num) + '...'
+	}
 }
 
-
-console.log(repeatStringNumTimes("abc", 3))
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length))
