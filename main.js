@@ -522,20 +522,27 @@ console.log(book2.wishList());
 // const result = new Person('Mushfiqur Niloy', 23);
 // console.log(result.print())
 
-function largestOfFour(arr) {
-	let longestArray = [];
+// function largestOfFour(arr) {
+// 	let longestArray = [];
 
-	for(let i = 0; i < arr.length; i++){
-		const newArray = arr[i].sort((a, b) => b - a)
-		longestArray.push(newArray.shift())
-	}
+// 	for(let i = 0; i < arr.length; i++){
+// 		const newArray = arr[i].sort((a, b) => b - a)
+// 		longestArray.push(newArray.shift())
+// 	}
 
-	return longestArray;
+// 	return longestArray;
 
-  }
-  
-  largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+//   }
 
-const arrays = [4, 5, 1, 3].sort((a, b) => b - a);
+//   largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
-console.log(arrays.shift())
+// const arrays = [4, 5, 1, 3].sort((a, b) => b - a);
+
+// console.log(arrays.shift())
+
+function repeatStringNumTimes(str, num) {
+	return num > 0 ? str.repeat(num) : ''
+}
+
+
+console.log(repeatStringNumTimes("abc", 3))
