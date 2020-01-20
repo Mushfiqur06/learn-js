@@ -547,11 +547,17 @@ console.log(book2.wishList());
 
 //   booWho(null);
 
-function frankenSplice(arr1, arr2, n) {
-	let newArray = arr2.slice()
-	console.log(newArray)
-	newArray.splice(n, 0, ...arr1)
-	return newArray
-}
+// function frankenSplice(arr1, arr2, n) {
+// 	let newArray = arr2.slice()
+// 	console.log(newArray)
+// 	newArray.splice(n, 0, ...arr1)
+// 	return newArray
+// }
 
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1))
+// console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1))
+
+function bouncer(arr) {
+	return arr.filter(Boolean)
+  }
+  
+  console.log(bouncer([7, "ate", "", false, 9]))
