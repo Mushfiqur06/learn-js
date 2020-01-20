@@ -540,9 +540,18 @@ console.log(book2.wishList());
 
 // console.log(arrays.shift())
 
-function booWho(bool) {
-	// What is the new fad diet for ghost developers? The Boolean.
-	return typeof bool === "boolean" ? true : false;
-  }
-  
-  booWho(null);
+// function booWho(bool) {
+// 	// What is the new fad diet for ghost developers? The Boolean.
+// 	return typeof bool === "boolean" ? true : false;
+//   }
+
+//   booWho(null);
+
+function frankenSplice(arr1, arr2, n) {
+	let newArray = arr2.slice()
+	console.log(newArray)
+	newArray.splice(n, 0, ...arr1)
+	return newArray
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1))
