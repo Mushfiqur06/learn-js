@@ -556,8 +556,16 @@ console.log(book2.wishList());
 
 // console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1))
 
-function bouncer(arr) {
-	return arr.filter(Boolean)
-  }
-  
-  console.log(bouncer([7, "ate", "", false, 9]))
+// function bouncer(arr) {
+// 	return arr.filter(Boolean)
+//   }
+
+//   console.log(bouncer([7, "ate", "", false, 9]))
+
+function getIndexToIns(arr, num) {
+	arr.push(num)
+	arr.sort((a, b) => a - b)
+	return arr.indexOf(num)
+}
+
+console.log(getIndexToIns([40, 60], 50))
