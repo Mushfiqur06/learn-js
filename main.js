@@ -562,10 +562,30 @@ console.log(book2.wishList());
 
 //   console.log(bouncer([7, "ate", "", false, 9]))
 
-function getIndexToIns(arr, num) {
-	arr.push(num)
-	arr.sort((a, b) => a - b)
-	return arr.indexOf(num)
+// function getIndexToIns(arr, num) {
+// 	arr.push(num)
+// 	arr.sort((a, b) => a - b)
+// 	return arr.indexOf(num)
+// }
+
+// console.log(getIndexToIns([40, 60], 50))
+
+function Bird(name){
+	this.name = name
 }
 
-console.log(getIndexToIns([40, 60], 50))
+Bird.prototype.numLegs = 4
+let duck = new Bird('Niloy')
+
+let ownProperty = []
+let prototypeProperty = []
+
+for(let property in duck){
+	if(duck.hasOwnProperty(property)){
+		ownProperty.push(property)
+	}else{
+		prototypeProperty.push(property)
+	}
+}
+console.log(ownProperty)
+console.log(prototypeProperty)
