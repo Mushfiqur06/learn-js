@@ -570,7 +570,7 @@ console.log(book2.wishList());
 
 // console.log(getIndexToIns([40, 60], 50))
 
-function Bird(name){
+function Bird(name) {
 	this.name = name
 }
 
@@ -580,12 +580,24 @@ let duck = new Bird('Niloy')
 let ownProperty = []
 let prototypeProperty = []
 
-for(let property in duck){
-	if(duck.hasOwnProperty(property)){
+for (let property in duck) {
+	if (duck.hasOwnProperty(property)) {
 		ownProperty.push(property)
-	}else{
+	} else {
 		prototypeProperty.push(property)
 	}
 }
-console.log(ownProperty)
-console.log(prototypeProperty)
+
+
+function Dog(name) {
+	this.name = name;
+}
+
+// Add your code below this line
+function joinDogFraternity(candidate) {
+	if (candidate.constructor === Dog) {
+		return true
+	} else {
+		return false
+	}
+}
