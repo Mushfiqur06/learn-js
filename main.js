@@ -601,3 +601,18 @@ function joinDogFraternity(candidate) {
 		return false
 	}
 }
+
+function Dog(name) {
+	this.name = name;
+}
+
+Dog.prototype = {
+	// Add your code below this line
+	numLegs: 2,
+	eat: function () {
+		console.log('Eat Function')
+	},
+	describe: function () {
+		console.log('Describe Function')
+	}
+};
