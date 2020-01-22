@@ -1,20 +1,13 @@
-function Animal(){
+function Animal() { }
+function Bird() { }
+function Dog() { }
 
-}
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
 
-Animal.prototype = {
-	constructor: Animal,
+// Add your code below this line
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
 
-	eat: function(){
-		console.log("nom nom nom");
-	}
-}
-
-function Dog(){
-
-}
-
-Dog.prototype = Object.create(Animal.prototype)
-
-let bengle = new Dog()
-console.log(bengle.eat())
+let duck = new Bird();
+let beagle = new Dog();
