@@ -616,3 +616,12 @@ Dog.prototype = {
 		console.log('Describe Function')
 	}
 };
+
+let dropdownData = [
+	{name: 'Mushfiqur'},
+	{name: 'Meher'},
+	{name: 'Tuni'}
+]
+
+
+console.log(dropdownData.map(item => item.name))
