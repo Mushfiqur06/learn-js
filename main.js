@@ -617,34 +617,58 @@ Dog.prototype = {
 	}
 };
 
-let dropdownData = [
-	{name: 'Mushfiqur'},
-	{name: 'Meher'},
-	{name: 'Tuni'}
+let dropdownData = [{
+		name: 'Mushfiqur'
+	},
+	{
+		name: 'Meher'
+	},
+	{
+		name: 'Tuni'
+	}
 ]
 
 
 function Cat(name) {
 	this.name = name;
-  }
-  
-  Cat.prototype = {
+}
+
+Cat.prototype = {
 	constructor: Cat
-  };
-  
-  function Bear(name) {
+};
+
+function Bear(name) {
 	this.name = name;
-  }
-  
-  Bear.prototype = {
+}
+
+Bear.prototype = {
 	constructor: Bear
-  };
-  
-  function Animal() { }
-  
-  Animal.prototype = {
+};
+
+function Animal() {}
+
+Animal.prototype = {
 	constructor: Animal,
-  eat: function() {
-	  console.log("nom nom nom");
+	eat: function () {
+		console.log("nom nom nom");
 	}
-  };
+};
+
+function Animal() {}
+
+Animal.prototype = {
+	constructor: Animal,
+	eat: function () {
+		console.log("nom nom nom");
+	}
+};
+
+// Add your code below this line
+Animal.prototype.eat = function () {
+	console.log("nom nom nom");
+}
+let duck = Object.create(Animal.prototype); // Change this line
+let beagle = Object.create(Animal.prototype); // Change this line
+
+duck.eat(); // Should print "nom nom nom"
+beagle.eat();
