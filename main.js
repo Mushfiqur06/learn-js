@@ -1,13 +1,18 @@
-function Animal() { }
-function Bird() { }
-function Dog() { }
+function Animal(){}
 
-Bird.prototype = Object.create(Animal.prototype);
-Dog.prototype = Object.create(Animal.prototype);
+Animal.prototype.eat = function(){
+    return "nom nom nom";
+}
 
-// Add your code below this line
-Bird.prototype.constructor = Bird;
-Dog.prototype.constructor = Dog;
+function Bird(){}
 
-let duck = new Bird();
-let beagle = new Dog();
+Bird.prototype = Object.create(Animal.prototype)
+
+console.log(Animal())
+
+Bird.prototype.eat = function(){
+    return "peck peck peck";
+}
+
+let luck = new Animal()
+console.log(luck.eat())
