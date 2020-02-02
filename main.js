@@ -1,18 +1,21 @@
-function Animal(){}
-
-Animal.prototype.eat = function(){
-    return "nom nom nom";
+let bird = {
+    name: 'Donald',
+    numLegs: 2
 }
 
-function Bird(){}
-
-Bird.prototype = Object.create(Animal.prototype)
-
-console.log(Animal())
-
-Bird.prototype.eat = function(){
-    return "peck peck peck";
+let plane = {
+    model: '777',
+    numPassengers: 542
 }
 
-let luck = new Animal()
-console.log(luck.eat())
+let flyMixin = (obj) => {
+    obj.fly = function(){
+        console.log('Something')
+    }
+}
+
+flyMixin(bird)
+
+bird.fly()
+
+console.log(bird)
