@@ -1,21 +1,10 @@
-let bird = {
-    name: 'Donald',
-    numLegs: 2
-}
+function Bird(){
+    let weight = 15
 
-let plane = {
-    model: '777',
-    numPassengers: 542
-}
-
-let flyMixin = (obj) => {
-    obj.fly = function(){
-        console.log('Something')
+    this.getWeight = function(){
+        return weight
     }
 }
 
-flyMixin(bird)
-
-bird.fly()
-
-console.log(bird)
+let result = new Bird()
+console.log(result.weight)
