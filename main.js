@@ -1,21 +1,15 @@
-let duck = {
-    name: 'Mushfiqur'
-}
-let motionModule = (function(){
-    return {
-        glideMixin: function(obj){
-            obj.glide = function(){
-                console.log("Gliding on the water")
-            }
-        },
-        flyMixin: function(obj){
-            obj.fly = function(){
-                console.log("Flying, wooosh!")
-            }
-        }
+const preparTea = () => 'greenTea'
+
+const getTea = (numOfCups) => {
+    const teaCups = []
+
+    for(let cups = 1; cups <= numOfCups; cups += 1){
+        const teaCup = preparTea()
+        teaCups.push(teaCup)
     }
-})()
 
-motionModule.flyMixin(duck)
+    return teaCups;
+}
 
-console.log(duck.fly())
+const tea4TeamFCC = getTea(40);
+console.log(tea4TeamFCC)
