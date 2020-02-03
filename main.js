@@ -1,15 +1,16 @@
-const preparTea = () => 'greenTea'
+const prepareGreenTea = () => 'greenTea'
+const prepareBlackTea = () => 'blackTea'
 
-const getTea = (numOfCups) => {
-    const teaCups = []
+const getTea = (prepareTea, numOfCups) => {
+    const teaCups = [];
 
     for(let cups = 1; cups <= numOfCups; cups += 1){
-        const teaCup = preparTea()
-        teaCups.push(teaCup)
+        const cup = prepareTea()
+        teaCups.push(teaCups)
     }
 
-    return teaCups;
+    return teaCups
 }
 
-const tea4TeamFCC = getTea(40);
-console.log(tea4TeamFCC)
+const tea4GreenTeamFCC = getTea(prepareGreenTea, 27)
+const tea4BlackTeamFCC = getTea(prepareBlackTea, 13)
