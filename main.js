@@ -12,5 +12,5 @@ const getTea = (prepareTea, numOfCups) => {
     return teaCups
 }
 
-const tea4GreenTeamFCC = getTea(prepareGreenTea, 57)
+const tea4GreenTeamFCC = getTea(prepareGreenTea, 56)
 const tea4BlackTeamFCC = getTea(prepareBlackTea, 23) 
