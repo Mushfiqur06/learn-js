@@ -1,5 +1,5 @@
 const prepareGreenTea = () => 'greenTea'
-const prepareBlackTea = () => 'blackTea'
+const prepareBlackTea = () => 'blackTeas'
 
 const getTea = (prepareTea, numOfCups) => {
     const teaCups = [];
