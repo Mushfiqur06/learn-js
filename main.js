@@ -13,4 +13,3 @@ const getTea = (prepareTea, numOfCups) => {
 }
 
 const tea4GreenTeamFCC = getTea(prepareGreenTea, 27)
-const tea4BlackTeamFCC = getTea(prepareBlackTea, 13) 
