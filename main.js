@@ -1,10 +1,12 @@
-var fixed = 4;
+var fixedValue = 4;
 
-function increment(){
-    var result = fixed + 1;
-    return result
+// Add your code below this line
+function incrementer (value) {
+  var result = value + 1;
+  return result
+
+  // Add your code above this line
 }
 
-var another = increment()
-console.log(another)
-console.log(fixed)
+var newValue = incrementer(fixedValue); // Should equal 5
+console.log(fixedValue);
