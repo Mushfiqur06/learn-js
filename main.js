@@ -1,3 +1,5 @@
-a = 21
-b = a + 2
-b
+var amount  = 42;
+amount = amount + 2;
+amount = '$' + String(amount)
+
+console.log(amount)
