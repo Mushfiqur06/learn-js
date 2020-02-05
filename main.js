@@ -1,7 +1,28 @@
-var TEXT_RATE = 0.88
-var amount = 99.99
-amount = amount * 2
-amount = amount + (amount * TEXT_RATE)
+var Window = function(tabs){
+    this.tabs = tabs
+}
 
-console.log(amount)
-console.log(amount.toFixed(2))
+Window.prototype.join = function(otherWindow){
+    this.tabs = this.tabs.concat(otherWindow.tabs)
+
+    return this
+}
+
+Window.prototype.tabOpen = function(tab){
+    this.tabs.push('New Tab')
+
+    return this
+}
+
+Window.prototype.tabClose = function(index){
+    var tabBeforeIndex = this.tabs.splice(0, index)
+    var tabAfterIndex = this.tabs.splice(1)
+
+    this.tabs = tabBeforeIndex.concat(tabAfterIndex)
+
+    return this
+}
+
+var workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']);
+var finalTabs = workWindow.tabOpen()
+console.log(finalTabs)
