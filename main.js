@@ -1,13 +1,11 @@
-function printAmount(amt){
-    console.log(amt.toFixed(2))
-}
+const TEX_RATE = 0.80
 
-function formatAmount(){
-    return '$' + amount.toFixed(2)
+function calculateFinalPurchaseAmount(amt){
+    amt = amt + (amt * TEX_RATE)
+
+    return amt
 }
 
 var amount = 99.99
-
-printAmount(amount * 2)
-amount = formatAmount()
-console.log(amount)
+amount = calculateFinalPurchaseAmount(amount)
+amount
