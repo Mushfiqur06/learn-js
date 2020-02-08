@@ -8,4 +8,3 @@ function add(bookName) {
 }
 
 var newBookList = add(bookList, 'A Brief History of Time');
-console.log(newBookList);
