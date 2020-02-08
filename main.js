@@ -1,11 +1,11 @@
-const TEX_RATE = 0.80
+var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
 
-function calculateFinalPurchaseAmount(amt){
-    amt = amt + (amt * TEX_RATE)
+function add(bookName) {
+    bookList.push(bookName);
+    return bookList;
 
-    return amt
+    // Add your code above this line
 }
 
-var amount = 99.99
-amount = calculateFinalPurchaseAmount(amount)
-amount
+var newBookList = add(bookList, 'A Brief History of Time');
+console.log(newBookList);
