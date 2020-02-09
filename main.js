@@ -1,8 +1,12 @@
-var bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
-
-function add(bookName) {
-    return [...bookList, bookName];
+function one(){
+    var a  = 2;
+    console.log(a)
 }
 
-var newBookList = add(bookList, 'A Brief History of Time');
-console.log(newBookList)
+function two(){
+    var a = 4;
+    console.log(a)
+}
+
+one()
+two()
