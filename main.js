@@ -1,9 +1,18 @@
 function foo(){
-    return "Something"
+    var a = 1;
+
+    function bar(){
+        var b = 2;
+
+        function baz(){
+            var c = 3;
+
+            console.log(a, b, c)
+        }
+
+        baz()
+    }
+    bar()
+
 }
-
-foo.bar = 22;
-
-console.log(typeof foo)
-console.log(typeof foo())
-console.log(typeof foo.bar)
+foo()
