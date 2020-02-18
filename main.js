@@ -1,17 +1,7 @@
-function foo(){
-    console.log(this.bar);
+var foo = {
+    a: 42
 }
-
-var bar = 'global'
-
-var obj1 = {
-    bar: 'obj1',
-    foo: foo
-}
-var obj2 = {
-    bar: 'obj2'
-}
-
-console.log(foo())
-console.log(obj1.foo())
-console.log(foo.call(obj2))
+var bar = Object.create(foo)
+bar.b = 'Hello'
+console.log(bar.a)
+console.log(bar.b)
