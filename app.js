@@ -64,7 +64,25 @@
 // })
 // console.log(homes)
 
-let a = 10;
-let b = a;
-a = 0;
-console.log(b);
+// let a = 10;
+// let b = a;
+// a = 0;
+// console.log(b);
+
+function duplicateSpreadsheet(orginal) {
+	if (orginal.hasPaddingChanges) {
+		throw new Error(
+			'You need to save the file before you can duplicate the file'
+		);
+	}
+
+	let copy = {
+		created: Date.now(),
+		author: orginal.author,
+		cells: orginal.cells,
+		metadata: orginal.metadata
+	};
+	copy.metadata.title = 'Copy of' + orginal.metadata.title;
+
+	return copy;
+}
