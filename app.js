@@ -89,8 +89,11 @@
 
 var arr = [2, 45, 67, 34];
 
-function dealWithOneNumber(num) {
-	console.log(num + 10);
-}
+var newArray = [];
+arr.forEach(num => {
+	if (num > 50) {
+		newArray.push(num);
+	}
+});
 
-arr.forEach(dealWithOneNumber);
+console.log(newArray);
