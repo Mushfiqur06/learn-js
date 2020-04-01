@@ -87,16 +87,41 @@
 // 	return copy;
 // }
 
-var arr = ['Hello', 12, undefined, 'Mushfiqur', 13];
+// var arr = ['Hello', 12, undefined, 'Mushfiqur', 13];
 
-var newArr = arr.map(value => {
-	if (typeof value === 'string') {
-		return '';
-	} else if (typeof value === 'number') {
-		return value % 2 !== 0 ? value + 1 : value;
-	} else {
-		return value;
+// var newArr = arr.map(value => {
+// 	if (typeof value === 'string') {
+// 		return '';
+// 	} else if (typeof value === 'number') {
+// 		return value % 2 !== 0 ? value + 1 : value;
+// 	} else {
+// 		return value;
+// 	}
+// });
+
+// console.log(newArr);
+
+// const myObj = {
+// 	name: 'Mushfiqur Niloy',
+// 	anotherObj: {
+// 		name: 'Niloy',
+// 		msg: function() {
+// 			console.log('My name is ' + this.name);
+// 		}
+// 	}
+// };
+
+// myObj.anotherObj.msg.call(myObj);
+
+const karim = {
+	name: 'Mushfiqur',
+	age: function() {
+		console.log(this.name);
 	}
-});
+};
 
-console.log(newArr);
+const rahim = {
+	name: 'Mushfiqur Niloy'
+};
+
+karim.age.apply(rahim);
