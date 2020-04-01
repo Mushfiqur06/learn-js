@@ -69,20 +69,28 @@
 // a = 0;
 // console.log(b);
 
-function duplicateSpreadsheet(orginal) {
-	if (orginal.hasPaddingChanges) {
-		throw new Error(
-			'You need to save the file before you can duplicate the file'
-		);
-	}
+// function duplicateSpreadsheet(orginal) {
+// 	if (orginal.hasPaddingChanges) {
+// 		throw new Error(
+// 			'You need to save the file before you can duplicate the file'
+// 		);
+// 	}
 
-	let copy = {
-		created: Date.now(),
-		author: orginal.author,
-		cells: orginal.cells,
-		metadata: orginal.metadata
-	};
-	copy.metadata.title = 'Copy of' + orginal.metadata.title;
+// 	let copy = {
+// 		created: Date.now(),
+// 		author: orginal.author,
+// 		cells: orginal.cells,
+// 		metadata: orginal.metadata
+// 	};
+// 	copy.metadata.title = 'Copy of' + orginal.metadata.title;
 
-	return copy;
+// 	return copy;
+// }
+
+var arr = [2, 45, 67, 34];
+
+function dealWithOneNumber(num) {
+	console.log(num + 10);
 }
+
+arr.forEach(dealWithOneNumber);
