@@ -87,8 +87,16 @@
 // 	return copy;
 // }
 
-var arr = ['Hello', 12, undefined, 'Mushfiqur'];
+var arr = ['Hello', 12, undefined, 'Mushfiqur', 13];
 
-var newArr = arr.filter(value => typeof value === 'string');
+var newArr = arr.map(value => {
+	if (typeof value === 'string') {
+		return '';
+	} else if (typeof value === 'number') {
+		return value % 2 !== 0 ? value + 1 : value;
+	} else {
+		return value;
+	}
+});
 
 console.log(newArr);
