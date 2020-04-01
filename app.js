@@ -87,13 +87,8 @@
 // 	return copy;
 // }
 
-var arr = [2, 45, 67, 34];
+var arr = ['Hello', 12, undefined, 'Mushfiqur'];
 
-var newArray = [];
-arr.forEach(num => {
-	if (num > 50) {
-		newArray.push(num);
-	}
-});
+var newArr = arr.filter(value => typeof value === 'string');
 
-console.log(newArray);
+console.log(newArr);
