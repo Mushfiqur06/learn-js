@@ -113,15 +113,34 @@
 
 // myObj.anotherObj.msg.call(myObj);
 
-const karim = {
-	name: 'Mushfiqur',
-	age: function() {
-		console.log(this.name);
-	}
-};
+// var a = 10;
+// var b = 20;
 
-const rahim = {
-	name: 'Mushfiqur Niloy'
-};
+// function hello(a, b) {
+// 	console.log('Before' + a + ' ' + b);
+// 	var temp = a;
+// 	a = b;
+// 	b = temp;
+// 	console.log('After ' + a + ' Hello ' + b);
+// }
 
-karim.age.apply(rahim);
+// hello(a, b);
+// console.log('A = ' + a + ' And B = ' + b);
+
+// let obj = {
+// 	a: 10,
+// 	b: 20
+// };
+
+// function hello(obj) {
+// 	console.log('Before A = ' + obj.a + ' Before B = ' + obj.b);
+// 	var temp = obj.a;
+// 	obj.a = obj.b;
+// 	obj.b = temp;
+// 	console.log('After A = ' + obj.a + ' After B = ' + obj.b);
+// }
+
+// hello(obj);
+
+// console.log('A = ' + obj.a);
+// console.log('B ' + obj.b);
