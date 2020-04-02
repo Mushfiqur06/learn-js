@@ -144,3 +144,33 @@
 
 // console.log('A = ' + obj.a);
 // console.log('B ' + obj.b);
+
+function Person(name, age, designation) {
+	this.name = name;
+	this.age = age;
+	this.designation = designation;
+}
+
+const personOne = new Person('Mushfiqur', 24, 'Software Engineer');
+
+console.log(personOne);
+const personTwo = new Person(
+	'Mushfiqur Niloy',
+	26,
+	'Senior Front-End Engineer'
+);
+
+console.log(personTwo);
+
+Person.prototype.birthDate = function() {
+	console.log(
+		'Hello, My name is ' +
+			this.name +
+			' and i am ' +
+			this.age +
+			'years old. I am a ' +
+			this.designation
+	);
+};
+
+personOne.birthDate();
