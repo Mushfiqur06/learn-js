@@ -183,3 +183,4 @@ function Teacher(name, age, designation, subject) {
 const teacherOne = new Teacher('MR Niloy', 33, 'Teacher', 'Javascript');
 
 console.log(teacherOne);
+console.log(teacherOne.subject);
