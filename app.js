@@ -174,3 +174,12 @@ Person.prototype.birthDate = function() {
 };
 
 personOne.birthDate();
+
+function Teacher(name, age, designation, subject) {
+	Person.call(this, name, age, designation);
+	this.subject = subject;
+}
+
+const teacherOne = new Teacher('MR Niloy', 33, 'Teacher', 'Javascript');
+
+console.log(teacherOne);
