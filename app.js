@@ -145,42 +145,50 @@
 // console.log('A = ' + obj.a);
 // console.log('B ' + obj.b);
 
-function Person(name, age, designation) {
-	this.name = name;
-	this.age = age;
-	this.designation = designation;
-}
+// function Person(name, age, designation) {
+// 	this.name = name;
+// 	this.age = age;
+// 	this.designation = designation;
+// }
 
-const personOne = new Person('Mushfiqur', 24, 'Software Engineer');
+// const personOne = new Person('Mushfiqur', 24, 'Software Engineer');
 
-console.log(personOne);
-const personTwo = new Person(
-	'Mushfiqur Niloy',
-	26,
-	'Senior Front-End Engineer'
-);
+// console.log(personOne);
+// const personTwo = new Person(
+// 	'Mushfiqur Niloy',
+// 	26,
+// 	'Senior Front-End Engineer'
+// );
 
-console.log(personTwo);
+// console.log(personTwo);
 
-Person.prototype.birthDate = function() {
-	console.log(
-		'Hello, My name is ' +
-			this.name +
-			' and i am ' +
-			this.age +
-			'years old. I am a ' +
-			this.designation
-	);
-};
+// Person.prototype.birthDate = function() {
+// 	console.log(
+// 		'Hello, My name is ' +
+// 			this.name +
+// 			' and i am ' +
+// 			this.age +
+// 			'years old. I am a ' +
+// 			this.designation
+// 	);
+// };
 
-personOne.birthDate();
+// personOne.birthDate();
 
-function Teacher(name, age, designation, subject) {
-	Person.call(this, name, age, designation);
-	this.subject = subject;
-}
+// function Teacher(name, age, designation, subject) {
+// 	Person.call(this, name, age, designation);
+// 	this.subject = subject;
+// }
 
-const teacherOne = new Teacher('MR Niloy', 33, 'Teacher', 'Javascript');
+// const teacherOne = new Teacher('MR Niloy', 33, 'Teacher', 'Javascript');
 
-console.log(teacherOne);
-console.log(teacherOne.subject);
+// console.log(teacherOne);
+// console.log(teacherOne.subject);
+
+let arr = [23, 45, 26, 78, 90];
+
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+
+let sum = arr.reduce(reducer, 10);
+
+console.log(sum);
