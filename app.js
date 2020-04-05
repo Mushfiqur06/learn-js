@@ -185,10 +185,18 @@
 // console.log(teacherOne);
 // console.log(teacherOne.subject);
 
-let arr = [23, 45, 26, 78, 90];
+// let arr = [23, 45, 26, 78, 90];
 
-let sum = arr.reduce((previousValue, currentValue) => {
-	return previousValue + currentValue;
-}, 10);
+// let sum = arr.reduce((previousValue, currentValue) => {
+// 	return previousValue + currentValue;
+// }, 10);
 
-console.log(sum);
+// console.log(sum);
+
+let person = {
+	name: 'Mushfiqur Rahman Niloy',
+	email: 'mushfiqur06@gmail.com',
+	status: 'Single',
+	skills: ['Javascript', 'Python', 'C']
+};
+person.skills.map(skill => console.log('Mushfiqur knows ' + skill));
