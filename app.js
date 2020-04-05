@@ -187,8 +187,8 @@
 
 let arr = [23, 45, 26, 78, 90];
 
-const reducer = (previousValue, currentValue) => previousValue + currentValue;
-
-let sum = arr.reduce(reducer, 10);
+let sum = arr.reduce((previousValue, currentValue) => {
+	return previousValue + currentValue;
+}, 10);
 
 console.log(sum);
