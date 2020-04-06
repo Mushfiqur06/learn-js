@@ -193,10 +193,18 @@
 
 // console.log(sum);
 
-let person = {
-	name: 'Mushfiqur Rahman Niloy',
-	email: 'mushfiqur06@gmail.com',
-	status: 'Single',
-	skills: ['Javascript', 'Python', 'C']
-};
-person.skills.map(skill => console.log('Mushfiqur knows ' + skill));
+// let person = {
+// 	name: 'Mushfiqur Rahman Niloy',
+// 	email: 'mushfiqur06@gmail.com',
+// 	status: 'Single',
+// 	skills: ['Javascript', 'Python', 'C']
+// };
+// person.skills.map(skill => console.log('Mushfiqur knows ' + skill));
+
+function nameOfFunction(str) {
+	typeof str === 'string'
+		? console.log(str.split(' ').length)
+		: console.log('Hello brother please input string');
+}
+
+nameOfFunction(23);
