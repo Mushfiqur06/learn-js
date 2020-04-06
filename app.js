@@ -209,12 +209,23 @@
 
 // nameOfFunction(23);
 
-let a = 55;
+// let a = {
+// 	some: 55
+// };
 
-function fun(value) {
-	value = 100;
-	console.log(value);
+// function fun(value) {
+// 	let newValue = Object.assign({}, value);
+// 	newValue.some = 100;
+// 	console.log(newValue);
+// }
+
+// fun(a);
+// console.log(a.some);
+
+function greetings(msg) {
+	return function(name) {
+		console.log(msg + ' ' + name);
+	};
 }
 
-fun(a);
-console.log(a);
+console.log(greetings('Good Morning')('Mushfiqur Rahman Niloy'));
