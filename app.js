@@ -222,10 +222,15 @@
 // fun(a);
 // console.log(a.some);
 
-function greetings(msg) {
-	return function(name) {
-		console.log(msg + ' ' + name);
+function power(num) {
+	return function base(base) {
+		let newValue = 1;
+		for (let i = 0; i < num; i++) {
+			newValue *= base;
+		}
+
+		return newValue;
 	};
 }
 
-console.log(greetings('Good Morning')('Mushfiqur Rahman Niloy'));
+console.log(power(3)(5));
