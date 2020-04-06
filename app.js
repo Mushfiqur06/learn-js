@@ -201,10 +201,20 @@
 // };
 // person.skills.map(skill => console.log('Mushfiqur knows ' + skill));
 
-function nameOfFunction(str) {
-	typeof str === 'string'
-		? console.log(str.split(' ').length)
-		: console.log('Hello brother please input string');
+// function nameOfFunction(str) {
+// 	typeof str === 'string'
+// 		? console.log(str.split(' ').length)
+// 		: console.log('Hello brother please input string');
+// }
+
+// nameOfFunction(23);
+
+let a = 55;
+
+function fun(value) {
+	value = 100;
+	console.log(value);
 }
 
-nameOfFunction(23);
+fun(a);
+console.log(a);
