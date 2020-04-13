@@ -221,3 +221,16 @@
 
 // fun(a);
 // console.log(a.some);
+
+const add = (function () {
+	let counter = 0;
+
+	return () => {
+		console.log('Hello' + counter);
+		return (counter += 1);
+	};
+})();
+
+console.log(add());
+console.log(add());
+console.log(add());
