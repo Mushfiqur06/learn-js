@@ -222,14 +222,10 @@
 // fun(a);
 // console.log(a.some);
 
-function factorial(n) {
-	if (n === 0 || n === 1) {
-		return 1;
-	}
-	for (var i = n - 1; i >= 1; i--) {
-		n *= i;
-	}
-	return n;
+function vowelsAndConsonants(s) {
+	var vowel = s.match(/[aeiouAEIOU]/gi);
+	var consonants = s.match(/[^aeiou$]/gi);
+	vowel.concat(consonants).forEach((k) => k);
 }
 
-console.log(factorial(4));
+vowelsAndConsonants('javascriptloops');
