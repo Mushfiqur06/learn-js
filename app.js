@@ -222,10 +222,11 @@
 // fun(a);
 // console.log(a.some);
 
-function vowelsAndConsonants(s) {
-	var vowel = s.match(/[aeiouAEIOU]/gi);
-	var consonants = s.match(/[^aeiou$]/gi);
-	vowel.concat(consonants).forEach((k) => k);
+function getSecondLargestNumber(num) {
+	var second_highest = num.sort(function (a, b) {
+		console.log(a, b);
+	})[1];
+	return second_highest;
 }
 
-vowelsAndConsonants('javascriptloops');
+console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
