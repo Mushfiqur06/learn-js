@@ -222,11 +222,11 @@
 // fun(a);
 // console.log(a.some);
 
-function getSecondLargestNumber(num) {
-	var second_highest = num.sort(function (a, b) {
-		console.log(a, b);
-	})[1];
-	return second_highest;
-}
+// function getSecondLargestNumber(num) {
+// 	var second_highest = num.sort(function (a, b) {
+// 		console.log(a, b);
+// 	})[1];
+// 	return second_highest;
+// }
 
-console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
+// console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
