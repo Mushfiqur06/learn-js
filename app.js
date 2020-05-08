@@ -230,4 +230,3 @@ function getSecondLargestNumber(num) {
 }
 
 console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
-console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
