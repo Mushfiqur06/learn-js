@@ -225,7 +225,6 @@
 function getSecondLargestNumber(num) {
   var second_highest = num.sort(function (a, b) {
     console.log(a, b);
-    console.log();
   })[1];
   return second_highest;
 }
