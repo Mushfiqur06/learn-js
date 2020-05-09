@@ -230,3 +230,17 @@
 // }
 
 // console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
+
+function maps(arr, callback) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i], i, arr));
+  }
+  console.log(result);
+  return result;
+}
+
+let newResult = maps([2, 4, 6, 8], (item) => {
+  return item * 2;
+});
+console.log(newResult);
