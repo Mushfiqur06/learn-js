@@ -228,3 +228,5 @@ function getSecondLargestNumber(num) {
   })[1];
   return second_highest;
 }
+
+console.log(getSecondLargestNumber([2, 3, 6, 6, 5]));
