@@ -245,13 +245,13 @@
 // });
 // console.log(newResult);
 
-function hello(arr, callback) {
-  for (let i = 0; i < arr.length; i++) {
-    callback(arr[i]);
-  }
-}
-let alphabet = '';
-hello(['a', 'b', 'c', 'd'], function (item) {
-  alphabet += item;
-});
-console.log(alphabet);
+// function hello(arr, callback) {
+//   for (let i = 0; i < arr.length; i++) {
+//     callback(arr[i]);
+//   }
+// }
+// let alphabet = '';
+// hello(['a', 'b', 'c', 'd'], function (item) {
+//   alphabet += item;
+// });
+// console.log(alphabet);
