@@ -254,4 +254,3 @@ let alphabet = '';
 hello(['a', 'b', 'c', 'd'], function (item) {
   alphabet += item;
 });
-console.log(alphabet);
