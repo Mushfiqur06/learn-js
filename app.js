@@ -285,13 +285,25 @@
 // console.log(newArray);
 // console.log(arr);
 
-let number = [];
-let impureFun = (num) => number.push(num);
+// let number = [];
+// let impureFun = (num) => number.push(num);
 
-let pureFun = (num) => (anotherNum) => anotherNum.concat(num);
+// let pureFun = (num) => (anotherNum) => anotherNum.concat(num);
 
-impureFun(5);
-console.log(number);
-console.log(pureFun(6)(number));
-console.log(pureFun(9)(number));
-console.log(number);
+// impureFun(5);
+// console.log(number);
+// console.log(pureFun(6)(number));
+// console.log(pureFun(9)(number));
+// console.log(number);
+
+let counter = 1;
+switch (counter) {
+  case 0: {
+    let name;
+    break;
+  }
+  case 1: {
+    let name;
+    break;
+  }
+}
