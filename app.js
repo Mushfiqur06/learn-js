@@ -255,3 +255,16 @@
 //   alphabet += item;
 // });
 // console.log(alphabet);
+
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  print() {
+    console.log(this.name);
+  }
+}
+
+let hello = new User('Mushfiqur');
+console.log(hello.print());
