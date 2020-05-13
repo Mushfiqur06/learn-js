@@ -256,15 +256,26 @@
 // });
 // console.log(alphabet);
 
-class User {
-  constructor(name) {
-    this.name = name;
-  }
+// class User {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  print() {
-    console.log(this.name);
-  }
-}
+//   print() {
+//     console.log(this.name);
+//   }
+// }
 
-let hello = new User('Mushfiqur');
-console.log(hello.print());
+// let hello = new User('Mushfiqur');
+// console.log(hello.print());
+
+// function User(name) {
+//   this.name = name;
+// }
+
+// User.prototype.print = function () {
+//   console.log(this.name);
+// };
+// let hello = new User('Niloy');
+// hello.print();
+// console.log(User.prototype.prototype);
