@@ -280,7 +280,18 @@
 // hello.print();
 // console.log(User.prototype.prototype);
 
-let arr = [1, 2, 3, 'Hello', 4];
-let newArray = arr.split(2, 4);
-console.log(newArray);
-console.log(arr);
+// let arr = [1, 2, 3, 'Hello', 4];
+// let newArray = arr.split(2, 4);
+// console.log(newArray);
+// console.log(arr);
+
+let number = [];
+let impureFun = (num) => number.push(num);
+
+let pureFun = (num) => (anotherNum) => anotherNum.concat(num);
+
+impureFun(5);
+console.log(number);
+console.log(pureFun(6)(number));
+console.log(pureFun(9)(number));
+console.log(number);
