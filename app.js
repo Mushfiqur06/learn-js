@@ -279,3 +279,8 @@
 // let hello = new User('Niloy');
 // hello.print();
 // console.log(User.prototype.prototype);
+
+let arr = [1, 2, 3, 'Hello', 4];
+let newArray = arr.slice(2, 4);
+console.log(newArray);
+console.log(arr);
