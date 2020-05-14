@@ -19,6 +19,13 @@
 // console.log(output);
 // console.log(newOutput);
 
-for (var i = 0; i < 12; i++) {
-  setTimeout(() => console.log(i), 1);
-}
+const shape = {
+  radius: 10,
+  diameter() {
+    console.log(this.radius * 2);
+  },
+  perameter: () => 2 * Math.PI * this.radius,
+};
+
+console.log(shape.diameter());
+console.log(shape.perameter());
