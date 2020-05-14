@@ -6,15 +6,18 @@
 // console.log(bar.a)
 // console.log(bar.b)
 
-const num = 3;
+// const num = 3;
 
-function multipleBy2(inputNum) {
-  const result = inputNum * 2;
-  return result;
-}
+// function multipleBy2(inputNum) {
+//   const result = inputNum * 2;
+//   return result;
+// }
 
-const output = multipleBy2(num);
-const newOutput = multipleBy2(10);
+// const output = multipleBy2(num);
+// const newOutput = multipleBy2(10);
 
-console.log(output);
-console.log(newOutput);
+// console.log(output);
+// console.log(newOutput);
+
+console.log(name);
+let name = 'Niloy';
