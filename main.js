@@ -19,5 +19,6 @@
 // console.log(output);
 // console.log(newOutput);
 
-console.log(name);
-let name = 'Niloy';
+for (var i = 0; i < 12; i++) {
+  setTimeout(() => console.log(i), 1);
+}
