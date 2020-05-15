@@ -22,3 +22,8 @@
 // const a = 3;
 // const b = new Number(3);
 // console.log(typeof b);
+
+String.prototype.giveLadyaPizza = () => console.log('Hello');
+
+const name = 'Niloy';
+name.giveLadyaPizza();
