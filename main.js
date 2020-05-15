@@ -19,13 +19,6 @@
 // console.log(output);
 // console.log(newOutput);
 
-const shape = {
-  radius: 10,
-  diameter() {
-    console.log(this.radius * 2);
-  },
-  perameter: () => 2 * Math.PI * this.radius,
-};
-
-console.log(shape.diameter());
-console.log(shape.perameter());
+// const a = 3;
+// const b = new Number(3);
+// console.log(typeof b);
