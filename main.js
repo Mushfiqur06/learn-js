@@ -23,7 +23,22 @@
 // const b = new Number(3);
 // console.log(typeof b);
 
-String.prototype.giveLadyaPizza = () => console.log('Hello');
+// String.prototype.giveLadyaPizza = () => console.log('Hello');
 
-const name = 'Niloy';
-name.giveLadyaPizza();
+// const name = 'Niloy';
+// name.giveLadyaPizza();
+
+// function sayHi() {
+//   return (() => 0)();
+// }
+
+// console.log(typeof sayHi());
+
+var hello = 32;
+
+function say() {
+  hello = 50;
+  console.log('Inner ' + hello);
+}
+console.log(hello);
+say();
