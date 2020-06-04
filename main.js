@@ -34,11 +34,26 @@
 
 // console.log(typeof sayHi());
 
-var hello = 32;
+// var hello = 32;
 
-function say() {
-  hello = 50;
-  console.log('Inner ' + hello);
-}
-console.log(hello);
-say();
+// function say() {
+//   hello = 50;
+//   console.log('Inner ' + hello);
+// }
+// console.log(hello);
+// say();
+
+// let hello = [1, 2, 3, 4];
+// let arr1 = hello.slice(0, 2);
+// console.log(arr1);
+// console.log(hello);
+let A = 20;
+let B = 10;
+let x, y;
+
+x = A / 2;
+y = B / 2;
+x = x + y;
+y = x - y;
+console.log(x);
+console.log(y);
