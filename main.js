@@ -56,7 +56,11 @@
 // console.log(x);
 // console.log(y);
 
-const PI = 3.14;
+let values = [1, 2, 3, 4, 5];
+let sumOfValues = 0;
 
-const hello = (redius) => redius * redius * PI;
-console.log(hello(10));
+for (let i = 0; i < values.length; i++) {
+  sumOfValues += values[i];
+}
+console.log(sumOfValues);
+console.log(values.slice(1));
