@@ -327,3 +327,18 @@ myForeach(arr, function (data, i) {
 	console.log(data);
 	console.log(i);
 });
+
+function myMap(arr, cb) {
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++) {
+		var result = cb(arr[i]);
+		newArr.push(result);
+	}
+
+	return newArr;
+}
+
+var mapped = myMap(arr, function (data) {
+	return data * 2;
+});
+console.log('Mapped' + mapped);
