@@ -296,14 +296,21 @@
 // console.log(pureFun(9)(number));
 // console.log(number);
 
-let counter = 1;
-switch (counter) {
-  case 0: {
-    let name;
-    break;
-  }
-  case 1: {
-    let name;
-    break;
-  }
-}
+// let counter = 1;
+// switch (counter) {
+//   case 0: {
+//     let name;
+//     break;
+//   }
+//   case 1: {
+//     let name;
+//     break;
+//   }
+// }
+
+let hello = 'hello dkfdkf        dfjdf    jdnfjdn'
+	.split(' ')
+	.filter(function (item) {
+		return item;
+	});
+console.log(hello);
