@@ -342,3 +342,37 @@ var mapped = myMap(arr, function (data) {
 	return data * 2;
 });
 console.log('Mapped' + mapped);
+
+function myFilter(arr, cb) {
+	var newArr = [];
+	for (var i = 0; i < arr.length; i++) {
+		if (cb(arr[i])) {
+			newArr.push(arr[i]);
+		}
+	}
+	return newArr;
+}
+
+var anotherResult = myFilter(arr, function (data) {
+	return data > 4;
+});
+console.log('Filterd ' + anotherResult);
+
+function myReducer(arr, cb) {
+	var result = undefined;
+
+	for (var i = 0; i < arr.length; i++) {
+		if (result == undefined) {
+			result = arr[i];
+		} else {
+			result = cb(result, arr[i]);
+		}
+	}
+
+	return result;
+}
+
+var data = myReducer(arr, function (a, b) {
+	return a + b;
+});
+console.log('Reduycerr ' + data);
