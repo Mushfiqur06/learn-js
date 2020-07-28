@@ -308,9 +308,22 @@
 //   }
 // }
 
-let hello = 'hello dkfdkf        dfjdf    jdnfjdn'
-	.split(' ')
-	.filter(function (item) {
-		return item;
-	});
-console.log(hello);
+// let hello = 'hello dkfdkf        dfjdf    jdnfjdn'
+// 	.split(' ')
+// 	.filter(function (item) {
+// 		return item;
+// 	});
+// console.log(hello);
+
+//Foreach
+var arr = [2, 4, 6, 9];
+function myForeach(arr, cb) {
+	for (var i = 0; i < arr.length; i++) {
+		cb(arr[i], i);
+	}
+}
+
+myForeach(arr, function (data, i) {
+	console.log(data);
+	console.log(i);
+});
