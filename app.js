@@ -375,4 +375,5 @@ function myReducer(arr, cb) {
 var data = myReducer(arr, function (a, b) {
 	return a + b;
 });
+
 console.log('Reduycerr ' + data);
