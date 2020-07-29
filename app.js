@@ -356,6 +356,7 @@ function myFilter(arr, cb) {
 var anotherResult = myFilter(arr, function (data) {
 	return data > 4;
 });
+
 console.log('Filterd ' + anotherResult);
 
 function myReducer(arr, cb) {
