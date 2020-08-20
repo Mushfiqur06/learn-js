@@ -307,3 +307,74 @@
 //     break;
 //   }
 // }
+
+// let hello = 'hello dkfdkf        dfjdf    jdnfjdn'
+// 	.split(' ')
+// 	.filter(function (item) {
+// 		return item;
+// 	});
+// console.log(hello);
+
+//Foreach
+var arr = [2, 4, 6, 9];
+function myForeach(arr, cb) {
+  for (var i = 0; i < arr.length; i++) {
+    cb(arr[i], i);
+  }
+}
+
+myForeach(arr, function (data, i) {
+  console.log(data);
+  console.log(i);
+});
+
+function myMap(arr, cb) {
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    var result = cb(arr[i]);
+    newArr.push(result);
+  }
+
+  return newArr;
+}
+
+var mapped = myMap(arr, function (data) {
+  return data * 2;
+});
+console.log("Mapped" + mapped);
+
+function myFilter(arr, cb) {
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+
+var anotherResult = myFilter(arr, function (data) {
+  return data > 4;
+});
+
+console.log("Filterd " + anotherResult);
+
+function myReducer(arr, cb) {
+  var result = undefined;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (result == undefined) {
+      result = arr[i];
+    } else {
+      result = cb(result, arr[i]);
+    }
+  }
+
+  return result;
+}
+
+var data = myReducer(arr, function (a, b) {
+  return a + b;
+});
+
+console.log("Reduycerr " + data);
