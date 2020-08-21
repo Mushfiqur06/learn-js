@@ -338,20 +338,20 @@
 //   return newArr;
 // }
 
-var mapped = myMap(arr, function (data) {
-  return data * 2;
-});
-console.log("Mapped" + mapped);
+// var mapped = myMap(arr, function (data) {
+//   return data * 2;
+// });
+// console.log("Mapped" + mapped);
 
-function myFilter(arr, cb) {
-  var newArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    if (cb(arr[i])) {
-      newArr.push(arr[i]);
-    }
-  }
-  return newArr;
-}
+// function myFilter(arr, cb) {
+//   var newArr = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     if (cb(arr[i])) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// }
 
 var anotherResult = myFilter(arr, function (data) {
   return data > 4;
