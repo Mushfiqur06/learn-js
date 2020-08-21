@@ -353,11 +353,11 @@
 //   return newArr;
 // }
 
-var anotherResult = myFilter(arr, function (data) {
-  return data > 4;
-});
+// var anotherResult = myFilter(arr, function (data) {
+//   return data > 4;
+// });
 
-console.log("Filterd " + anotherResult);
+// console.log("Filterd " + anotherResult);
 
 function myReducer(arr, cb) {
   var result = undefined;
