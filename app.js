@@ -359,19 +359,19 @@
 
 // console.log("Filterd " + anotherResult);
 
-function myReducer(arr, cb) {
-  var result = undefined;
+// function myReducer(arr, cb) {
+//   var result = undefined;
 
-  for (var i = 0; i < arr.length; i++) {
-    if (result == undefined) {
-      result = arr[i];
-    } else {
-      result = cb(result, arr[i]);
-    }
-  }
+//   for (var i = 0; i < arr.length; i++) {
+//     if (result == undefined) {
+//       result = arr[i];
+//     } else {
+//       result = cb(result, arr[i]);
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
 var data = myReducer(arr, function (a, b) {
   return a + b;
