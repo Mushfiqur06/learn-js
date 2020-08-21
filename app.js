@@ -323,10 +323,10 @@
 //   }
 // }
 
-myForeach(arr, function (data, i) {
-  console.log(data);
-  console.log(i);
-});
+// myForeach(arr, function (data, i) {
+//   console.log(data);
+//   console.log(i);
+// });
 
 function myMap(arr, cb) {
   var newArr = [];
