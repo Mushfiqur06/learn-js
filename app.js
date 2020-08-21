@@ -373,8 +373,8 @@
 //   return result;
 // }
 
-var data = myReducer(arr, function (a, b) {
-  return a + b;
-});
+// var data = myReducer(arr, function (a, b) {
+//   return a + b;
+// });
 
-console.log("Reduycerr " + data);
+// console.log("Reduycerr " + data);
