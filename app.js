@@ -328,15 +328,15 @@
 //   console.log(i);
 // });
 
-function myMap(arr, cb) {
-  var newArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    var result = cb(arr[i]);
-    newArr.push(result);
-  }
+// function myMap(arr, cb) {
+//   var newArr = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     var result = cb(arr[i]);
+//     newArr.push(result);
+//   }
 
-  return newArr;
-}
+//   return newArr;
+// }
 
 var mapped = myMap(arr, function (data) {
   return data * 2;
