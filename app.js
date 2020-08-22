@@ -378,3 +378,19 @@
 // });
 
 // console.log("Reduycerr " + data);
+
+class Obj {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
+}
+
+class Obj2 {
+  constructor(c) {
+    this.c = c;
+  }
+}
+
+var obj = new Obj(2, 4);
+var obj2 = new Obj2(10);
