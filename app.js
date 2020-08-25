@@ -402,3 +402,20 @@
 // add.store = 5;
 
 // console.log(add.prototype);
+
+function userCreator(name, score) {
+  this.name = name;
+  this.score = score;
+}
+
+userCreator.prototype.increment = function () {
+  console.log(this.score++);
+};
+userCreator.prototype.login = function () {
+  console.log("Login");
+};
+const user1 = new userCreator("Niloy", 9);
+user1.increment();
+user1.increment();
+user1.increment();
+console.log(user1);
