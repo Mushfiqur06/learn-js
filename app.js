@@ -417,5 +417,5 @@ userCreator.prototype.login = function () {
 const user1 = new userCreator("Niloy", 9);
 user1.increment();
 user1.increment();
-user1.increment();
-console.log(user1);
+// user1.increment();
+// console.log(user1);
