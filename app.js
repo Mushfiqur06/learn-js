@@ -411,10 +411,10 @@ function userCreator(name, score) {
 userCreator.prototype.increment = function () {
   console.log(this.score++);
 };
-userCreator.prototype.login = function () {
-  console.log("Login");
-};
-const user1 = new userCreator("Niloy", 9);
+// userCreator.prototype.login = function () {
+//   console.log("Login");
+// };
+// const user1 = new userCreator("Niloy", 9);
 // user1.increment();
 // user1.increment();
 // user1.increment();
