@@ -399,7 +399,7 @@
 //   return num * 2;
 // }
 
-// add.store = 5;
+add.store = 5;
 
 console.log(add.prototype);
 
