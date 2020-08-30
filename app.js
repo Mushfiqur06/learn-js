@@ -395,9 +395,9 @@
 // var obj = new Obj(2, 4);
 // var obj2 = new Obj2(10);
 
-// function add(num) {
-//   return num * 2;
-// }
+function add(num) {
+  return num * 2;
+}
 
 add.store = 5;
 
