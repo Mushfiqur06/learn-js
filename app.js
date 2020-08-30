@@ -418,4 +418,4 @@
 // user1.increment();
 // user1.increment();
 // user1.increment();
-// console.log(user1);
+console.log(user1);
