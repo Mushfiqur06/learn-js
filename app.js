@@ -408,9 +408,9 @@
 //   this.score = score;
 // }
 
-// userCreator.prototype.increment = function () {
-//   console.log(this.score++);
-// };
+userCreator.prototype.increment = function () {
+  console.log(this.score++);
+};
 userCreator.prototype.login = function () {
   console.log("Login");
 };
