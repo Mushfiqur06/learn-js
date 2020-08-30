@@ -401,7 +401,7 @@
 
 // add.store = 5;
 
-// console.log(add.prototype);
+console.log(add.prototype);
 
 function userCreator(name, score) {
   this.name = name;
