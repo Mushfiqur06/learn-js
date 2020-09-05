@@ -419,3 +419,10 @@
 // user1.increment();
 // user1.increment();
 // console.log(user1);
+
+// const myPromise = new Promise((resolve, reject) => {
+//   let name = "Mushfiqur";
+//   resolve(name);
+// });
+
+// myPromise.then((name) => console.log(name));
