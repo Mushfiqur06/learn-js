@@ -401,12 +401,12 @@
 
 // add.store = 5;
 
-console.log(add.prototype);
+// console.log(add.prototype);
 
-function userCreator(name, score) {
-  this.name = name;
-  this.score = score;
-}
+// function userCreator(name, score) {
+//   this.name = name;
+//   this.score = score;
+// }
 
 userCreator.prototype.increment = function () {
   console.log(this.score++);
