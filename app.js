@@ -1,3 +1,4 @@
+import { getID } from "./helper";
 //Build-in browser function
 // let myText = 'I am a String';
 // let newString = myText.replace('String', 'I am another String');
@@ -426,3 +427,53 @@
 // });
 
 // myPromise.then((name) => console.log(name));
+
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+// const postData = [];
+// fetch(URL)
+//   .then((res) => res.json())
+//   .then((data) => postData.push(data))
+//   .catch((err) => console.log(err));
+
+// console.log(postData);
+
+// function ask(question, ok, no) {
+//   if (confirm(question)) {
+//     ok();
+//   } else {
+//     no();
+//   }
+// }
+// function showOk() {
+//   alert("You agreed");
+// }
+// function showCancel() {
+//   alert("You cancel the execution");
+// }
+
+// ask("Do you agree?", showOk, showCancel);
+
+let heading = getID("heading");
+let headingArr = [heading.innerText, "Hading Change Info"];
+let terms = false;
+let container = getID("container");
+
+setInterval(() => {
+  if (terms) {
+    heading.innerText = headingArr[0];
+    terms = false;
+    container.style.backgroundColor = "palegreen";
+  } else {
+    heading.innerText = headingArr[1];
+    terms = true;
+    container.style.backgroundColor = "palevioletred";
+  }
+}, 2000);
+
+const login = getID("login");
+const signup = getID("signup");
+function handler(e) {
+  alert(e.target.innerHTML);
+}
+login.addEventListener("click", handler);
+signup.addEventListener("click", handler);
