@@ -1,0 +1,22 @@
+{
+  "name": "learn-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "serve": "webpack-dev-server"
+  },
+  "repository": "https://github.com/Mushfiqur06/learn-js.git",
+  "author": "Mushfiqur Niloy <mushfiqur06@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
