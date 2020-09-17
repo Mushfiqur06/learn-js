@@ -16,7 +16,7 @@ export function query(term) {
 }
 export function queryAll(term) {
   try {
-    return document.getElementById(term);
+    return document.querySelectorAll(term);
   } catch (err) {
     console.log(err);
   }
