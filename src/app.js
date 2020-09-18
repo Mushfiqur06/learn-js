@@ -1,4 +1,17 @@
 import { getID, query, queryAll, getClass, create } from "./helper";
+import Contacts from "./contact/Contacts";
+import Contact from "./contact/Contact";
+
+let contacts = new Contacts({});
+contacts.createContact(new Contact({}));
+contacts.createContact(new Contact({}));
+contacts.createContact(new Contact({}));
+let showContactList = contacts.getContact();
+contacts.getContact().forEach((contact) => {
+  contacts.getSingleContact(contact.id).name = "Mushfiqur Niloy";
+});
+console.log(contacts.getContact());
+
 let circleTop = 0;
 let circleLeft = 0;
 const containerStyle = {
@@ -40,7 +53,6 @@ btns.append(left, right, bottom, top);
 const btnList = queryAll("button");
 const btnArr = Array.prototype.slice.call(btnList);
 btnArr.map((item) => {
-  console.log(item);
   item.addEventListener("click", function (event) {
     let circleName = event.target.innerText;
     switch (circleName) {
