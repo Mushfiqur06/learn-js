@@ -6,11 +6,11 @@ let contacts = new Contacts({});
 contacts.createContact(new Contact({}));
 contacts.createContact(new Contact({}));
 contacts.createContact(new Contact({}));
-// let showContactList = contacts.getContact();
-// contacts.getContact().forEach((contact) => {
-//   contacts.getSingleContact(contact.id).name = "Mushfiqur Niloy";
-// });
-// console.log(contacts.getContact());
+let showContactList = contacts.getContact();
+contacts.getContact().forEach((contact) => {
+  contacts.getSingleContact(contact.id).name = "Mushfiqur Niloy";
+});
+console.log(contacts.getContact());
 
 let circleTop = 0;
 let circleLeft = 0;
