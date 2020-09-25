@@ -12,4 +12,4 @@
 // let result = text.match(myRegex);
 // console.log(result);
 
-let reCriminals = /C+/;
+// let reCriminals = /C+/;
