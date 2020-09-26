@@ -6,6 +6,7 @@ class Contact {
     email = null,
     fb = null,
     group = "other",
+    favourite = false,
     id = uuidv4(),
   }) {
     this.name = name;
@@ -14,6 +15,7 @@ class Contact {
     this.fb = fb;
     this.group = group;
     this.id = id;
+    this.favourite = favourite;
   }
 
   print() {
