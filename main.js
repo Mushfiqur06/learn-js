@@ -350,3 +350,13 @@
 // }
 // var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 // console.log(sliceArray(inputAnim, 1, 3));
+
+function nonMutatingSplice(cities) {
+  // Only change code below this line
+  let newArr = cities.slice(0, 3);
+  return newArr;
+
+  // Only change code above this line
+}
+var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+console.log(nonMutatingSplice(inputCities));
