@@ -497,14 +497,14 @@ var watchList = [
   },
 ];
 
-function getRating(watchList) {
-  // Only change code below this line
-  var averageRating = watchList
-    .filter((item) => item.Director === "Christopher Nolan")
-    .map((item) => item.imdbRating)
-    .reduce((prev, next) => prev + next);
-  watchList.filter((item) => item.Director === "Christopher Nolan").length;
-  // Only change code above this line
-  return averageRating;
-}
-console.log(getRating(watchList));
+// function getRating(watchList) {
+//   // Only change code below this line
+//   var averageRating = watchList
+//     .filter((item) => item.Director === "Christopher Nolan")
+//     .map((item) => item.imdbRating)
+//     .reduce((prev, next) => prev + next);
+//   watchList.filter((item) => item.Director === "Christopher Nolan").length;
+//   // Only change code above this line
+//   return averageRating;
+// }
+// console.log(getRating(watchList));
