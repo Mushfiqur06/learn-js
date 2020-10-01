@@ -1,14 +1,15 @@
 import { getContact } from "./../../contact/Contacts";
 import { create } from "./../../helper";
 import contactUL from "./../contact/contactUL";
-import contactUl from "./../contact/contactUL";
 
 export function renderContactList(props) {
   let contactUI = null;
 
   if (getContact().length > 0) {
     console.log(getContact());
-    contactUI = contactUL(getContact());
+    contactUI = contactUL({
+      contactList: getContact(),
+    });
     // contactUI = document.createElement("ul");
     // contactUI.classList = "list-group";
 
