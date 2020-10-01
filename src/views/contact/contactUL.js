@@ -3,12 +3,9 @@ import contactItem from "./contactItem";
 
 export default function contactUL(props) {
   const ul = create("ul");
-  props.contactList.map((singleContact) => {
+  props.contactList.map((contact) => {
     let item = contactItem({
-      name: singleContact.name,
-      phone: singleContact.phone,
-      email: singleContact.email,
-      avatar: singleContact.name.charAt(0).toUpperCase(),
+      contact,
     });
 
     ul.append(item);
