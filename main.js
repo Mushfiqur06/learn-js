@@ -512,17 +512,8 @@
 let arr = [1, 1, 2, 3, 3, 23, 23];
 
 function remove_duplicates(arr) {
-  // let result = arr.filter((value, index) => arr.indexOf(value) === index);
-  // console.log(result);
-  let unique_num = [];
-  for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-    console.log(arr.indexOf(arr[i]));
-    if (arr.indexOf(arr[i]) === arr[i]) {
-      unique_num.push(arr[i]);
-    }
-  }
-  console.log(unique_num);
+  let result = arr.filter((value, index) => arr.indexOf(value) === index);
+  console.log(result);
 }
 
 console.log(remove_duplicates(arr));
