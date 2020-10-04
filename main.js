@@ -510,7 +510,6 @@
 // console.log(getRating(watchList));
 
 let arr = [1, 1, 2, 3, 3, 23, 23];
-console.log(arr.includes(2));
 function remove_duplicates(arr) {
   // let result = arr.filter((value, index) => arr.indexOf(value) === index);
   // console.log(result);
