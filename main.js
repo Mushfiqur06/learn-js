@@ -511,8 +511,8 @@
 
 let arr = [1, 1, 2, 3, 3, 23, 23];
 function remove_duplicates(arr) {
-  let result = arr.filter((value, index) => arr.indexOf(value) === index);
-  console.log(result);
+  // let result = arr.filter((value, index) => arr.indexOf(value) === index);
+  // console.log(result);
   // let unique = [];
   // arr.forEach((element) => {
   //   if (!unique.includes(element)) {
@@ -520,6 +520,14 @@ function remove_duplicates(arr) {
   //   }
   // });
   // return unique;
+
+  let unique = arr.reduce(function (a, b) {
+    if (a.indexOf(b) < 0) {
+      a.push(b);
+      return a;
+    }
+  }, []);
+  return unique;
 }
 
 console.log(remove_duplicates(arr));
