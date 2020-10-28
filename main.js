@@ -637,3 +637,22 @@
 // notesStore.getNotes("active");
 // notesStore.getNotes("completed");
 // notesStore.getNotes("foo");
+
+function sockMerchant(n, arr) {
+  let a = {}
+  let c = 0
+
+  for(var i = 0; i < n; i++){
+    if(a.hasOwnProperty(arr[i])){
+      c++;
+      delete a[arr[i]]
+    }else{
+      a[arr[i]] = 0
+    }
+  }
+
+  return c;
+
+}
+
+sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20])
