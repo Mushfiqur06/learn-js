@@ -523,3 +523,117 @@
 // }
 
 // console.log(remove_duplicates(arr));
+// const arr = [
+//   [1, 2, 3, 4],
+//   [5, 6, 7, 8],
+//   [9, 10, 11, 12],
+//   [13, 14, 15, 16],
+// ];
+// const metrix = (n) => {
+//   const results = [];
+//   const m = n.length;
+//   if (m === 0) {
+//     return results;
+//   } else {
+//     for (let i = 0; i < n; i++) {
+//       results.push([]);
+//     }
+//     let counter = 1;
+//     let startColumn = 0;
+//     let endColumn = n - 1;
+//     let startRow = 0;
+//     let endRow = n - 1;
+
+//     while (startColumn <= endColumn && startRow <= endRow) {
+//       // Top row
+//       for (let i = startColumn; i <= endColumn; i++) {
+//         results[startRow][i] = counter;
+//         counter++;
+//       }
+//       startRow++;
+//       // Right column
+//       for (let i = startRow; i <= endRow; i++) {
+//         results[i][endColumn] = counter;
+//         counter++;
+//       }
+//       endColumn--;
+//       // Bottom row
+//       for (let i = endColumn; i >= startColumn; i--) {
+//         results[endRow][i] = counter;
+//         counter++;
+//       }
+//       endRow--;
+//       // start column
+//       for (let i = endRow; i >= startRow; i--) {
+//         results[i][startColumn] = counter;
+//         counter++;
+//       }
+//       startColumn++;
+//     }
+//   }
+//   return results;
+// };
+// console.log(metrix(4));
+
+// class NotesStore {
+//   //add your code here
+//   constructor() {
+//     this.collection = [];
+//   }
+
+//   addNote(state, name) {
+//     if (name !== "") {
+//       if (state === "foo") {
+//         throw "Invalid State " + state;
+//       } else {
+//         this.collection.push({ state, name });
+//       }
+//     } else {
+//       throw "Name cannot empty";
+//     }
+//   }
+//   getNotes(state) {
+//     let arr = [];
+//     if (state === "foo") {
+//       throw "Invalid state " + state;
+//     } else {
+//       if (state === "active") {
+//         console.log(state);
+//         let newArr = {}
+//         this.collection.forEach((item) => {
+          
+//           if (item.state === state) {
+//             newArr = item.name
+//             console.log(newArr)
+//             arr.push({name: newArr})
+//           }
+//         });
+//         console.log(newArr)
+        
+//       } else if (state === "completed") {
+//         let newArr = {}
+//         this.collection.forEach((item) => {
+          
+//           if (item.state === state) {
+//             newArr = item.name
+//             arr.push(newArr)
+//           }
+//         });
+//         console.log(newArr)
+//       }
+//     }
+//     let arr2 = arr[0].concat(arr[1])
+//     console.log(arr2)
+//     console.log(arr)
+
+//     return arr;
+//   }
+// }
+
+// let notesStore = new NotesStore();
+// notesStore.addNote("active", "DrinkTea");
+// notesStore.addNote("active", "DrinkCoffee");
+// notesStore.addNote("completed", "Study");
+// notesStore.getNotes("active");
+// notesStore.getNotes("completed");
+// notesStore.getNotes("foo");
