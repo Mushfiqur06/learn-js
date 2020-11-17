@@ -601,7 +601,7 @@
 //         console.log(state);
 //         let newArr = {}
 //         this.collection.forEach((item) => {
-          
+
 //           if (item.state === state) {
 //             newArr = item.name
 //             console.log(newArr)
@@ -609,11 +609,11 @@
 //           }
 //         });
 //         console.log(newArr)
-        
+
 //       } else if (state === "completed") {
 //         let newArr = {}
 //         this.collection.forEach((item) => {
-          
+
 //           if (item.state === state) {
 //             newArr = item.name
 //             arr.push(newArr)
@@ -638,21 +638,34 @@
 // notesStore.getNotes("completed");
 // notesStore.getNotes("foo");
 
-function sockMerchant(n, arr) {
-  let a = {}
-  let c = 0
+// function sockMerchant(n, arr) {
+//   let a = {}
+//   let c = 0
 
-  for(var i = 0; i < n; i++){
-    if(a.hasOwnProperty(arr[i])){
-      c++;
-      delete a[arr[i]]
-    }else{
-      a[arr[i]] = 0
-    }
-  }
+//   for(var i = 0; i < n; i++){
+//     if(a.hasOwnProperty(arr[i])){
+//       c++;
+//       delete a[arr[i]]
+//     }else{
+//       a[arr[i]] = 0
+//     }
+//   }
 
-  return c;
+//   return c;
 
-}
+// }
 
-sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20])
+// sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20])
+
+// let a = 212;
+// let divisor = 9;
+// let result = 0;
+// let new_a = a;
+
+// while(new_a >= divisor){
+//   new_a = new_a - divisor;
+//   result = result + 1;
+// }
+
+// console.log(a)
+// console.log(divisor)
